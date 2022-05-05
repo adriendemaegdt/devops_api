@@ -81,7 +81,7 @@ jobs:
         with:
           # relative path to the place where source code with Dockerfile is located
           context: .
-          file: dockerfile
+          file: API.dockerfile
           # Note: tags has to be all lower-case
           tags: 2570/devops_api_image:latest
           # build on feature branches, push only on main branch
