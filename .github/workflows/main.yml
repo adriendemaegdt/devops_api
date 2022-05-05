@@ -83,7 +83,7 @@ jobs:
           context: .
           file: dockerfile
           # Note: tags has to be all lower-case
-          tags: 2570/devops_api_image:${{ steps.vars.outputs.sha_short }}
+          tags: 2570/devops_api_image:latest
           # build on feature branches, push only on main branch
           push: true # ${{ github.ref == 'refs/heads/main' }}
 
