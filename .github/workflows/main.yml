@@ -46,7 +46,7 @@ jobs:
           set -x
           docker version
           container_id=$(docker create 2570/devops_model_image:latest)
-          docker cp "$container_id:model.json" .
+          docker cp "$container_id:/data/model.json" .
       
           echo "Extracting model version latest"
           pwd
